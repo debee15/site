@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deixe sua Review</title>
+    <style>
+        /* Resetando estilos padrão */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Estilização do corpo da página */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ajusta a altura para ocupar a tela inteira */
+            background: url('./Imagens/back-ground-form.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        /* Sobreposição escura para melhorar contraste do formulário */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        /* Container principal do formulário */
+        .form-container {
+            background: rgb(131 20 36 / 65%);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: -1px 2px 20px 9px rgb(175 171 255 / 71%);
+            margin: 20px 30px;
+            position: relative;
+            z-index: 2; /* Mantém o formulário acima da sobreposição */
+        }
+
+        /* Estilização do título */
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        /* Layout do formulário usando Grid */
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        /* Estilização dos rótulos */
+        label {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        /* Estilização dos campos de entrada */
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 3px solid #000000;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: 0.5s; 
+        }
+
+        /* Efeito ao focar nos campos de entrada */
+        input:focus, textarea:focus, select:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(85, 10, 20, 0.3);
+        }
+
+        /* Container dos botões */
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        /* Estilização dos botões */
+        button {
+            position: relative;
+            width: 180px;
+            height: 60px;
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid #91C9FF;
+            outline: none;
+            transition: 1s ease-in-out;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        /* Texto dentro dos botões */
+        button span {
+            color: white;
+            font-size: 18px;
+            font-weight: 100;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Estilos individuais dos botões */
+        .submit-btn {
+            border-color: #26b926;
+        }
+
+        .submit-btn:hover {
+            background: #29aa4f;
+        }
+
+        .cancel-btn {
+            border-color: #f52a2a;
+        }
+
+        .cancel-btn:hover {
+            background: #9e2121;
+        }
+
+        /* Animação SVG dos botões */
+        button svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            fill: none;
+            stroke: white;
+            stroke-dasharray: 150 480;
+            stroke-dashoffset: 150;
+            transition: 1s ease-in-out;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        button:hover svg {
+            stroke-dashoffset: -480;
+        }
+
+        /* Mensagem de sucesso após envio do formulário */
+        .success-message {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none; /* Oculta por padrão */
+        }
+
+        /* Estilos para telas menores */
+        @media screen and (max-width: 480px) {
+            .form-container {
+                width: 80%;
+                padding: 20px;
+                margin: 25px 20px;
+            }
+
+            input, textarea, select {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .buttons button {
+                width: 100%;
+            }
+        }
+
+        h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    display: inline-block;  /* Garante que o título fique na mesma linha do SVG */
+    position: relative;
+}
+
+svg {
+    display: inline-block;  /* Faz o ícone ficar na mesma linha do título */
+    margin-top: 5px; /* Mover o ícone para baixo um pouco */
+    margin-left: 10px; /* Espaço entre o título e o ícone */
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Container do formulário -->
+    <div class="form-container">
+        
+        <!-- Mensagem de sucesso após envio -->
+        <div class="success-message">
+            <p>Review enviada com sucesso!</p>
+        </div>
+
+        <!-- Ícone SVG antes do título -->
+        
+        <!-- Ícone SVG antes do título -->
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="48" fill="#e6a800" stroke="#e68a00" stroke-width="4"/>
+    <polygon points="35,25 70,50 35,75" fill="white"/>
+</svg>
+
+<!-- Título do formulário -->
+<h2>
+    Deixe sua Review
+</h2>
+
+
+        <!-- Formulário para envio da review -->
+        <form action="/action_page.php" method="POST">
+            <!-- Campo Nome -->
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <!-- Campo E-mail -->
+            <label for="email">E-mail (Opcional):</label>
+            <input type="email" id="email" name="email">
+
+            <!-- Campo Nome do Filme -->
+            <label for="filme">Nome do Filme:</label>
+            <input type="text" id="filme" name="filme" required>
+
+            <!-- Campo Nota -->
+            <label for="nota">Nota:</label>
+            <select id="nota" name="nota" required>
+                <option value="5">⭐⭐⭐⭐⭐ - Excelente</option>
+                <option value="4">⭐⭐⭐⭐ - Muito bom</option>
+                <option value="3">⭐⭐⭐ - Médio</option>
+                <option value="2">⭐⭐ - Ruim</option>
+                <option value="1">⭐ - Péssimo</option>
+            </select>
+
+            <!-- Campo Comentário -->
+            <label for="mensagem">Comentário:</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+            <!-- Botões do formulário -->
+            <div class="buttons">
+                <!-- Botão de envio -->
+                <button type="submit" class="submit-btn">
+                    <span>Enviar Review</span>
+                    <svg>
+                        <rect x="0" y="0" width="100%" height="100%"></rect>
+                    </svg>
+                </button>
+                <!-- Botão de cancelamento -->
+                <button type="reset" class="cancel-btn">
+                    <span>Cancelar</span>
+                    <svg>
+                        <rect x="0" y="0" width="100%" height="100%"></rect>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Script para exibir a mensagem de sucesso ao enviar o formulário
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("form");
+            const successMessage = document.querySelector(".success-message");
+            
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Impede o envio real do formulário, sem deixar no erro 'HTTP ERRO 405'
+                successMessage.style.display = "block"; // Exibe a mensagem de sucesso
+
+                setTimeout(() => {
+                    form.reset(); // Limpa os campos do formulário
+                    successMessage.style.display = "none"; // Oculta a mensagem após 3 segundos
+                }, 2000);
+            });
+        });
+    </script>
+
+</body>
+</html>

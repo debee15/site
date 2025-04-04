@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- CABEÇALHO -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NOME DO SITE -->
+    <title>Reviews de Filmes | HOME</title>
+    <!-- ICONE DO SITE -->
+    <link rel="shortcut icon" href="./Imagens/pipoca.png" type="image/png">
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+
+</head>
+<!-- FIM DO CABEÇALHO -->
+
+<body>
+
+    <!-- LOGO -->
+
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+        <div class="container">
+            <!-- Logo -->
+            <img src="./imagens/CritiCine.png" id="logo-principal" alt="Logo Marca">
+
+
+
+
+            <!-- Botão responsivo -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Itens da Navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <hr class="w-100 d-block d-lg-none my-2 separator-line">
+                <!-- Apenas o Menu alinhado horizontalmente -->
+                <ul class="navbar-nav d-flex flex-row justify-content-center flex-wrap w-100">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Other</a>
+                    </li>
+                </ul>
+
+                <!-- Redes Sociais -->
+                <ul class="navbar-nav d-flex flex-row mt-2 justify-content-center w-100">
+                    <a href="https://www.instagram.com/" target="_blank" class="mx-2">
+                        <img src="./imagens/instagram-logo.svg" alt="Instagram" width="30">
+                    </a>
+                    <a href="https://x.com/?lang=pt" target="_blank" class="mx-2">
+                        <img src="./imagens/x-logo.svg" alt="X" width="30">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="mx-2">
+                        <img src="./imagens/youtube-logo.svg" alt="YouTube" width="30">
+                    </a>
+            </div>
+            <!-- Fim Redes Sociais -->
+
+        </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS + Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FIM DOS LINKS SOCIAIS -->
+
+
+    <!-- CONTEÚDO PRINCIPAL  -->
+    <div class="container content">
+        <div class="navBar">
+            <input type="text" placeholder="Pesquise por filmes...">
+            <div class="dropdown">
+                <button class="btn">Gêneros ▼</button>
+                <div class="dropdown-content">
+                    <a href="#Aventura">Aventura</a>
+                    <a href="#drama">Drama</a>
+                    <a href="#Comédia">Comédia</a>
+                    <a href="#Animação">Animação</a>
+                    <a href="#suspense">Suspense</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FIM DA BARRA DE NAVEGAÇÃO -->
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <section>
+            <!-- CARD 1 -->
+            <!-- CARD 1 -->
+            <div class="review">
+                <div class="slideshow-container">
+
+                    <!-- Slide 2 com imagem -->
+                    <div class="mySlides fade">
+                        <img src="https://via.placeholder.com/150" style="width:100%">
+                        <div class="text">Cena do Filme - Sombras do Passado</div>
+                    </div>
+
+                    <!-- Slide 3 com imagem -->
+                    <div class="mySlides fade">
+                        <img src="./Imagens/amaDeus_capa.jpg" style="width:100%">
+                        <div class="text">Outra Cena do Filme</div>
+                    </div>
+
+                    <!-- Slide 1 com vídeo -->
+                    <div class="mySlides fade">
+                        <!-- Passa a URL do vídeo para a função openModal -->
+                        <a href="#" onclick="openModal(1);  false;">Assistir Trailer - Sombras do Passado</a>
+                        <div class="text">Sombras do Passado (Trailer)</div>
+                    </div>
+
+                    <!-- Next & Previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+
+                <!-- Modal para exibir o vídeo -->
+                <!-- Modal para exibir o vídeo -->
+<div id="video-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe id="iframe-video" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+                <div class="review-content">
+                    <h2 class="review-title" id="Suspense">Sombras do Passado (2000)</h2>
+                    <div class="review-genres">
+                        Suspense, Ficção Científica, Drama, Terror
+                    </div>
+                    <div class="review-synopsis">
+                        <strong>Sinopse:</strong>
+                        <p>
+                            A detetive Sarah Miller investiga o desaparecimento de Emily, uma adolescente em uma cidade
+                            tranquila. Durante a investigação, descobre
+                            segredos obscuros sobre a identidade de Emily e uma rede de mentiras entre os moradores. À
+                            medida que se aprofunda no caso, Sarah percebe suas conexões pessoais
+                            e que pode ser a próxima vítima. No clímax, uma revelação chocante recontextualiza todas as
+                            pistas, deixando o público em dúvida sobre a verdade.
+                        </p>
+                    </div>
+                    <div class="review-text">
+                        <strong>Review:</strong>
+                        <p>
+                            "Sombras do Passado" é um thriller psicológico onde a detetive Sarah Miller investiga o
+                            desaparecimento de uma adolescente,
+                            revelando segredos sombrios e um mistério que envolve toda a cidade. Com um plot-twist
+                            impactante, o filme desafia o espectador
+                            a repensar cada pista e entrega um final inesquecível.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="card">
+                <img src="./Imagens/residentEvil_capa.jpg" alt="Verão Carioca" class="card__image">
+                <div class="card__content">
+                    <h2 class="card__title">Verão Carioca (2012)</h2>
+                    <div class="card__genres">
+                        Comédia, Aventura
+                    </div>
+                    <div class="card__synopsis">
+                        <strong>Sinopse:</strong>
+                        <p>
+                            Durante um escaldante verão no Rio de Janeiro, Pedro, um jovem carioca desastrado, decide
+                            impressionar sua paixão de infância com uma festa na praia. Com a ajuda de seus amigos
+                            igualmente atrapalhados, eles planejam o evento épico, enfrentando desde falta de dinheiro
+                            até problemas com fornecedores duvidosos. Enquanto lidam com obstáculos como convidados
+                            inesperados e brigas entre vizinhos, Pedro e sua turma descobrem que a verdadeira diversão
+                            está nos imprevistos que transformam a vida em uma grande comédia.
+                        </p>
+                    </div>
+                    <div class="card__review">
+                        <strong>Review:</strong>
+                        <p>
+                            "Verão Carioca" tenta capturar o charme do Rio de Janeiro, mas falha ao usar clichês e
+                            piadas previsíveis. Os personagens são superficiais e não evoluem, desperdiçando o potencial
+                            de explorar o humor genuíno das situações. A ambientação na cidade não é aproveitada de
+                            forma eficaz, tornando as festas na praia mais artificiais do que autênticas. A direção não
+                            equilibra humor e história, resultando em uma comédia que não cativa nem reflete o
+                            verdadeiro estilo de vida carioca.
+                        </p>
+                    </div>
+                    <div class="card__review-expand"> </div> <button class="card__button">Leia Mais</button>
+                </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="review">
+                <img src="./Imagens/procurandosugarman_capa.jpg"
+                    alt="Filme animado chamado 'A canção dos Ventos', com uma menina sorrindo ao ar livre">
+                <div class="review-content">
+                    <h2 class="review-title" id="Animação">A Canção dos Ventos (2019)</h2>
+                    <div class="review-genres">
+                        Animação, Família
+                    </div>
+                    <div class="review-synopsis">
+                        <strong>Sinopse:</strong>
+                        <p>
+                            Em um pequeno vilarejo encravado entre montanhas e vales verdejantes, vive Mia, uma jovem
+                            sonhadora com o poder de se comunicar com os ventos.
+                            Quando uma misteriosa doença começa a afetar as plantações, Mia embarca em uma jornada épica
+                            para encontrar a lendária Canção dos Ventos, acreditando que ela
+                            possui o poder de curar a terra e trazer esperança de volta ao seu lar. Ao longo do caminho,
+                            ela descobre amizades improváveis, enfrenta desafios emocionais e
+                            desvenda segredos antigos que conectam sua história à magia dos ventos.
+                        </p>
+                    </div>
+                    <div class="review-text">
+                        <strong>Review:</strong>
+                        <p>
+                            "A Canção dos Ventos" é uma obra-prima do estilo Ghibli que combina animação deslumbrante
+                            com uma narrativa profundamente emocional. Mia, a
+                            protagonista carismática, guia-nos por uma jornada de descoberta e cura através da conexão
+                            com os ventos. A trilha sonora envolvente e os cenários
+                            meticulosamente detalhados transportam o espectador para um mundo de magia e significado.
+                            Este filme não apenas encanta visualmente, mas também
+                            oferece uma reflexão inspiradora sobre a harmonia entre humanos e natureza, deixando uma
+                            impressão duradoura de beleza e esperança.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="review">
+                <img src="./Imagens/AindaestouAqui_capa.jpg"
+                    alt="Filme premiado 3 vezes, chamado 'ainda estou aqui', com uma mãe e 4 filhos sorrindo">
+                <div class="review-content">
+                    <h2 class="review-title" id="drama">Ainda Estou Aqui (2024) </h2>
+                    <div class="review-genres">
+                        Thriller, Drama
+                    </div>
+                    <div class="review-synopsis">
+                        <strong>Sinopse:</strong>
+                        <p>
+                            Baseado na autobiografia de Marcelo Rubens Paiva, "Ainda Estou Aqui" narra a história
+                            comovente de Eunice Paiva,
+                            uma mulher resiliente que enfrenta o desaparecimento de seu marido, o deputado Rubens Paiva,
+                            durante a ditadura militar no Brasil.
+                            Entrelaçando momentos de dor, coragem e amor inabalável, o filme explora a luta de Eunice
+                            para proteger seus filhos e preservar a
+                            memória de sua família em meio à repressão e ao silêncio imposto pelo regime. Uma obra que
+                            transcende a história pessoal,
+                            revelando o impacto humano e social de um dos períodos mais sombrios do país.
+                        </p>
+                    </div>
+                    <div class="review-text">
+                        <strong>Review:</strong>
+                        <p>
+                            Dirigido por Walter Salles, o filme é uma poderosa história sobre dor, coragem e memória
+                            durante a ditadura militar no Brasil.
+                            Fernanda Torres e Fernanda Montenegro brilham como Eunice Paiva, transmitindo emoção em cada
+                            cena. Com uma direção sensível e fotografia melancólica,
+                            "Ainda Estou Aqui" é um retrato tocante de resiliência e justiça, essencial para refletir
+                            sobre o impacto humano desse período histórico.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 5 -->
+            <div class="review">
+                <img src="./Imagens/divertidaMente2_capa.jpeg"
+                    alt="Filme animado 'Divertidamente 2', com vários personagens no cartaz que simbolizam as emoções">
+                <div class="review-content">
+                    <h2 class="review-title" id="Aventura">Divertida Mente 2 (2024)</h2>
+                    <div class="review-genres">
+                        Aventura, Animação, Comédia
+                    </div>
+                    <div class="review-synopsis">
+                        <strong>Sinopse:</strong>
+                        <p>
+                            Quando Riley (Kaitlyn Dias) chega a tão temida adolescência as já conhecidas, Alegria (Amy
+                            Poehler), Tristeza (Phyllis Smith),
+                            Raiva, Medo (Tony Hale) e Nojinho (Liza Lapira), que há muito tempo administram uma operação
+                            bem-sucedida,
+                            não têm certeza de como se sentir quando novos inquilinos chegam ao local, sendo um deles a
+                            tão temida Ansiedade (Maya Hawke).
+                        </p>
+                    </div>
+                    <div class="review-text">
+                        <strong>Review:</strong>
+                        <p>
+                            "Divertida Mente 2" traz uma sequência encantadora e emocional, agora com Riley na
+                            adolescência. A Pixar introduz novas emoções, como Ansiedade e
+                            Vergonha, explorando de forma sensível os desafios dessa fase da vida. Com a mesma
+                            criatividade e profundidade do primeiro filme, a animação mistura
+                            humor e lições valiosas, mantendo o público cativado. Visualmente impressionante, é uma
+                            continuação que enriquece a história original e ressoa com
+                            todas as idades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- FIM DO CONTEÚDO PRINCIPAL -->
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-links">
+            <p>©2025 Direitos Autorais Reservados</p>
+        </div>
+    </footer>
+    <!-- FIM DO RODAPÉ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- Script para abrir o vídeo no modal -->
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Função para avançar ou retroceder os slides
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Função para mostrar o slide atual
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+
+            // Ajusta o índice se estiver fora dos limites
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+
+            // Esconde todos os slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Mostra o slide atual
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        // Chame a função para mostrar o primeiro slide ao carregar a página
+        document.addEventListener("DOMContentLoaded", function () {
+            showSlides(slideIndex);
+        });
+        // Função para abrir o modal com um vídeo específico
+        // Função para abrir o modal com um vídeo específico
+
+        // Função para abrir o modal com um vídeo específico
+        function openModal(videoIndex) {
+            let videoUrls = [
+                "https://youtu.be/UbTng0b4wHE", // Sugar Man Trailer
+                "https://youtu.be/hn0GMZ_GtwA", // Amadeus Trailer
+                "https://youtu.be/yAZxx8t9zig", // Divertida Mente 2 Trailer
+                "https://youtu.be/_NzqP0jmk3o", // Ainda Estou Aqui Trailer
+                "https://youtu.be/1cVz1wfzqbs"  // Resident Evil: Bem-vindo a Raccoon City Trailer
+            ];
+
+            let modal = document.getElementById("video-modal");
+            let iframe = document.getElementById("iframe-video");
+            iframe.src = videoUrls[videoIndex - 1]; // Carrega o vídeo correto
+            modal.style.display = "block";
+        }
+
+        // Função para fechar o modal
+        function closeModal() {
+            let modal = document.getElementById("video-modal");
+            let iframe = document.getElementById("iframe-video");
+            iframe.src = ""; // Limpa o src para parar o vídeo
+            modal.style.display = "none";
+        }
+    </script>
+
+    <script>
+        const readMoreButtons = document.querySelectorAll('.card__button');
+
+        readMoreButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.card');
+                const reviewExpand = card.querySelector('.card__review-expand');
+                const review = card.querySelector('.card__review');
+
+                if (button.textContent === 'Leia Mais') {
+                    reviewExpand.style.display = 'block';
+                    review.style.display = 'block';
+                    button.textContent = 'Leia Menos';
+                } else {
+                    reviewExpand.style.display = 'none';
+                    review.style.display = 'none';
+                    button.textContent = 'Leia Mais';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

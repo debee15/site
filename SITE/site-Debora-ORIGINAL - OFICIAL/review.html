@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- CABEÇALHO -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NOME DO SITE -->
+    <title>Reviews de Filmes | Reviews </title>
+    <!-- ICONE DO SITE -->
+    <link rel="shortcut icon" href="./Imagens/pipoca.png" type="image/png">
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/review.css">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- BOOTSTRAP 5.3.2-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<!-- FIM DO CABEÇALHO -->
+
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+        <div class="container">
+            <!-- Logo -->
+            <img src="./imagens/CritiCine.png" id="logo-principal" alt="Logo Marca">
+            <!-- Botão responsivo -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Itens da Navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <hr class="w-100 d-block d-lg-none my-2 separator-line">
+                <!-- Apenas o Menu alinhado horizontalmente -->
+                <ul class="navbar-nav d-flex flex-row justify-content-center flex-wrap w-100">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="review.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Avalie Um Filme</a>
+                    </li>
+                </ul>
+            
+                <!-- Redes Sociais -->
+                <ul class="navbar-nav d-flex flex-row mt-2 justify-content-center w-100 ">
+                    <a href="https://www.instagram.com/" target="_blank" class="mx-2">
+                        <img src="./imagens/instagram-logo.svg" alt="Instagram" width="30">
+                    </a>
+                    <a href="https://x.com/?lang=pt" target="_blank" class="mx-2">
+                        <img src="./imagens/x-logo.svg" alt="X" width="30">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="mx-2">
+                        <img src="./imagens/youtube-logo.svg" alt="YouTube" width="30">
+                    </a>
+                </ul>
+                 <!-- Fim Redes Sociais -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS + Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CONTEÚDO PRINCIPAL  -->
+    <div class="container content">
+        <div class="navBar">
+            <input type="text" placeholder="Pesquise por filmes...">
+            
+            <div class="dropdown">
+                <button class="btn-class">Gêneros</button>
+                <div class="dropdown-content">
+                    <a href="#Aventura">Aventura</a>
+                    <a href="#drama">Drama</a>
+                    <a href="#musical">Musical</a>
+                    <a href="#terror">Terror</a>
+                    <a href="#historico">Histórico</a>
+                </div>
+            </div>
+        </div>
+        <!-- FIM DA BARRA DE NAVEGAÇÃO -->
+            <!-- CONTEÚDO PRINCIPAL -->
+            <section>
+
+                <!--  CARD 1    -->
+                <div class="review">
+                    <!-- COMEÇO DO CARROSEL -->
+                    <div class="carrossel">
+                        <div class="imagens" id="imagens">
+                            <img src="./Imagens/filmes/amaDeus_capa.jpg" class="ativo" alt="Imagem 1" loading="lazy">
+                            <img src="./Imagens/filmes/amaDeus_1.webp" alt="Imagem 2" loading="lazy">
+                            <iframe width="760" height="515"
+                                src="https://www.youtube.com/embed/ZQV9yySOmhs?si=MNeaBFH6ujv_Vd5F&mute=1" frameborder="0"
+                                >
+                            </iframe>
+                        </div>
+                        <button class="botao botao-esquerda">&#10094;</button>
+                        <button class="botao botao-direita">&#10095;</button>
+                    </div>
+                    <!-- FIM DO CARROCEL E VELHO JAVASCRIPT -->
+
+                    <div class="review-content">
+                        <h2 class="review-title" id="historico"> Amadeus (1984) </h2>
+                        <div class="review-genres">
+                            Musical, Drama, Histórico
+                        </div>
+                        <div class="review-synopsis">
+                            <strong>Sinopse:</strong>
+                            <p>
+                                "Amadeus" é um drama biográfico que explora a vida do compositor Wolfgang Amadeus Mozart
+                                e sua relação tumultuada com o
+                                colega compositor Antonio Salieri. Ambientado no século XVIII, o filme retrata a
+                                ascensão de Mozart à fama e o ciúme que
+                                Salieri sente de seu talento extraordinário. A narrativa é contada através da
+                                perspectiva de Salieri, que se vê em conflito
+                                entre sua admiração e inveja pelo gênio musical de Mozart.
+                            </p>
+                        </div>
+                        <div class="review-text">
+                            <strong>Review:</strong>
+                            <p>
+                                "Amadeus" é uma obra-prima que mergulha na complexa relação entre Wolfgang Amadeus
+                                Mozart e Antonio Salieri,
+                                explorando temas de genialidade, inveja e a luta pela fama. A direção de Milos Forman é
+                                excepcional, criando
+                                uma atmosfera rica e vibrante da Viena do século XVIII. F. Murray Abraham brilha como
+                                Salieri, transmitindo sua
+                                profunda admiração e ciúme em relação ao talento inigualável de Mozart, interpretado de
+                                forma exuberante por Tom Hulce.
+                                A trilha sonora, repleta das composições de Mozart, não apenas enriquece a narrativa,
+                                mas também se torna um personagem
+                                à parte, intensificando as emoções da trama. No entanto, a dramatização pode simplificar
+                                a complexidade histórica,
+                                apresentando uma visão mais romântica do que realmente ocorreu. Apesar disso, "Amadeus"
+                                é uma reflexão poderosa sobre a luta
+                                interna entre a genialidade e a mediocridade, deixando uma marca duradoura na história
+                                do cinema.
+                            </p>
+                        </div>
+                        <div class="card__review-expand"> </div> <button class="card__button">Leia Mais</button>
+                    </div>
+            </div>
+       
+        <!-- FIM DO CARD 1 -->
+
+        <!-- CARD 2 -->
+        <div class="review">
+
+            <!-- COMEÇO DO CARROSEL -->
+            <div class="carrossel">
+                <div class="imagens" id="imagens">
+                    <img src="./Imagens/filmes/resident_capa.jpg" class="ativo" alt="Imagem 1">
+                    <img src="./Imagens/filmes/resident_2.jpg" alt="Imagem 2">
+                    <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/1cVz1wfzqbs?si=fxolMSXAfoYen-UG&mute=1" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                </div>
+                <button class="botao botao-esquerda" onclick="mudarImagem(-1)">&#10094;</button>
+                <button class="botao botao-direita" onclick="mudarImagem(1)">&#10095;</button>
+            </div>
+            <!-- FIM DO CARROCEL E VELHO JAVASCRIPT -->
+
+            <div class="review-content">
+                <h2 class="review-title" id="terror"> Resident Evil:Bem-vindo a Raccoon City </h2>
+                <div class="review-genres" >
+                    Terror, Ação, Ficção Científica
+                </div>
+
+                <div class="review-synopsis">
+                    <strong>Sinopse:</strong>
+                    <p>
+                        Resident Evil: Bem-vindo a Raccoon City é um reboot da franquia de terror que se passa em 1998,
+                        quando a cidade de Raccoon City se
+                        torna um deserto urbano após a queda da Umbrella Corporation. Um grupo de sobreviventes,
+                        incluindo Claire Redfield e Leon S. Kennedy, enfrenta
+                        hordas de zumbis e monstros criados pela empresa enquanto tentam desvendar os segredos que
+                        levaram à catástrofe
+
+                    </p>
+                </div>
+
+                <div class="review-text">
+                    <strong>Review:</strong>
+                    <p>
+                        "Resident Evil: Bem-vindo a Raccoon City" gerou opiniões mistas entre críticos e espectadores.
+                        Enquanto alguns apreciaram a
+                        fidelidade ao material original dos jogos e a atmosfera de terror, muitos criticaram o
+                        desenvolvimento superficial dos
+                        personagens e a narrativa apressada, que pode deixar o público confuso. Embora os efeitos
+                        visuais e as representações de
+                        criaturas tenham sido elogiados, a recepção geral variou, com fãs da franquia divididos sobre se
+                        o filme conseguiu capturar
+                        a essência do que tornava os jogos impactantes.
+
+                    </p>
+                </div>
+
+                <div class="review-expand"> </div> <button class="card__button">Leia Mais</button>
+            </div>
+
+        </div>
+        <!-- CARD 3 -->
+        <div class="review">
+
+            <!-- COMEÇO DO CARROSEL -->
+            <div class="carrossel">
+                <div class="imagens" id="imagens">
+                    <img src="./Imagens/filmes/procurando_capa.jpg" class="ativo" alt="Imagem 1">
+                    <img src="./Imagens/filmes/procurando_2.jpg" alt="Imagem 2">
+                    <iframe width="760" height="515" src="https://www.youtube.com/embed/hEaCDxjmPNg?si=XeF3u3sD3aQzjPFG&mute=1"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                </div>
+                <button class="botao botao-esquerda" onclick="mudarImagem(-1)">&#10094;</button>
+                <button class="botao botao-direita" onclick="mudarImagem(1)">&#10095;</button>
+            </div>
+            <!-- FIM DO CARROCEL E VELHO JAVASCRIPT -->
+
+
+            <div class="review-content">
+                <h2 class="review-title" id="musical">Searching for Sugar Man (2012)
+                </h2>
+                <div class="review-genres" >
+                    Documentário, Musical
+                </div>
+                <div class="review-synopsis">
+                    <strong>Sinopse:</strong>
+                    <p>
+                        "Searching for Sugar Man" é um documentário que narra a busca de dois fãs sul-africanos por
+                        Sixto Rodriguez, um músico americano que, após o fracasso de seu álbum nos anos 70, se tornou
+                        uma lenda no país sem saber. O filme revela a história de como sua música impactou a luta contra
+                        o apartheid e a surpreendente descoberta de seu destino.
+                    </p>
+                </div>
+                <div class="review-text">
+                    <strong>Review:</strong>
+                    <p>
+                        "Searching for Sugar Man" é um documentário fascinante que combina música, mistério e a busca
+                        pela verdade. A narrativa envolvente revela a jornada de dois fãs em busca de Sixto Rodriguez,
+                        um artista que, apesar de seu talento, viveu na obscuridade. A direção de Malik Bendjelloul é
+                        habilidosa, equilibrando entrevistas e imagens de arquivo para criar uma atmosfera de
+                        descoberta. A música de Rodriguez, com letras poéticas e melódicas, ressoa profundamente,
+                        refletindo a luta e a esperança de uma geração. O filme não apenas celebra a redescoberta de um
+                        artista, mas também destaca o poder da música como forma de resistência e conexão. No entanto, a
+                        simplicidade da narrativa pode deixar algumas questões históricas em segundo plano. Apesar
+                        disso, "Searching for Sugar Man" é uma experiência emocionante e inspiradora que resgata a
+                        importância de vozes esquecidas.
+
+                    </p>
+                </div>
+                <div class="card__review-expand"> </div> <button class="card__button">Leia Mais</button>
+
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="review">
+            <!-- COMEÇO DO CARROSEL -->
+            <div class="carrossel">
+                <div class="imagens" id="imagens">
+                    <img src="./Imagens/filmes/AindaestouAqui_capa.jpg" class="ativo" alt="Imagem 1">
+                    <img src="./Imagens/filmes/aindaEstouAqui_2.jpg" alt="Imagem 2">
+                    <iframe width="760" height="515" src="https://www.youtube.com/embed/_NzqP0jmk3o?si=EJ10nBeE7NNRfBUt&mute=1"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                </div>
+                <button class="botao botao-esquerda" onclick="mudarImagem(-1)">&#10094;</button>
+                <button class="botao botao-direita" onclick="mudarImagem(1)">&#10095;</button>
+            </div>
+            <!-- FIM DO CARROCEL E VELHO JAVASCRIPT -->
+            <div class="review-content">
+                <h2 class="review-title" id="drama">Ainda Estou Aqui (2024) </h2>
+                <div class="review-genres">
+                    Thriller, Drama
+                </div>
+                <div class="review-synopsis">
+                    <strong>Sinopse:</strong>
+                    <p>
+                        Baseado na autobiografia de Marcelo Rubens Paiva, "Ainda Estou Aqui" narra a história
+                        comovente de Eunice Paiva,
+                        uma mulher resiliente que enfrenta o desaparecimento de seu marido, o deputado Rubens Paiva,
+                        durante a ditadura militar no Brasil.
+                        Entrelaçando momentos de dor, coragem e amor inabalável, o filme explora a luta de Eunice
+                        para proteger seus filhos e preservar a
+                        memória de sua família em meio à repressão e ao silêncio imposto pelo regime. Uma obra que
+                        transcende a história pessoal,
+                        revelando o impacto humano e social de um dos períodos mais sombrios do país.
+                    </p>
+                </div>
+                <div class="review-text">
+                    <strong>Review:</strong>
+                    <p>
+                        Dirigido por Walter Salles, o filme é uma poderosa história sobre dor, coragem e memória
+                        durante a ditadura militar no Brasil.
+                        Fernanda Torres e Fernanda Montenegro brilham como Eunice Paiva, transmitindo emoção em cada
+                        cena. Com uma direção sensível e fotografia melancólica,
+                        "Ainda Estou Aqui" é um retrato tocante de resiliência e justiça, essencial para refletir
+                        sobre o impacto humano desse período histórico.
+                    </p>
+                </div>
+                <div class="card__review-expand"> </div> <button class="card__button">Leia Mais</button>
+
+            </div>
+        </div>
+        <!-- CARD 5 -->
+        <div class="review">
+            <!-- COMEÇO DO CARROSEL -->
+            <div class="carrossel">
+                <div class="imagens" id="imagens">
+                    <img src="./Imagens/filmes/divertidaMente2_Capa.jpg" class="ativo" alt="Imagem 1">
+                    <img src="./Imagens/filmes/divertidaMente2_1.jpg" alt="Imagem 2">
+                    <iframe width="760" height="515" src="https://www.youtube.com/embed/yAZxx8t9zig?si=afRwwMndoRDE2jBH&mute=1"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    </iframe>
+                </div>
+                <button class="botao botao-esquerda" onclick="mudarImagem(-1)">&#10094;</button>
+                <button class="botao botao-direita" onclick="mudarImagem(1)">&#10095;</button>
+            </div>
+            <!-- FIM DO CARROCEL E VELHO JAVASCRIPT -->
+
+            <div class="review-content">
+                <h2 class="review-title" id="Aventura">Divertida Mente 2 (2024)</h2>
+                <div class="review-genres">
+                    Aventura, Animação, Comédia
+                </div>
+                <div class="review-synopsis">
+                    <strong>Sinopse:</strong>
+                    <p>
+                        Quando Riley (Kaitlyn Dias) chega a tão temida adolescência as já conhecidas, Alegria (Amy
+                        Poehler), Tristeza (Phyllis Smith),
+                        Raiva, Medo (Tony Hale) e Nojinho (Liza Lapira), que há muito tempo administram uma operação
+                        bem-sucedida,
+                        não têm certeza de como se sentir quando novos inquilinos chegam ao local, sendo um deles a
+                        tão temida Ansiedade (Maya Hawke).
+                    </p>
+                </div>
+                <div class="review-text">
+                    <strong>Review:</strong>
+                    <p>
+                        "Divertida Mente 2" traz uma sequência encantadora e emocional, agora com Riley na
+                        adolescência. A Pixar introduz novas emoções, como Ansiedade e
+                        Vergonha, explorando de forma sensível os desafios dessa fase da vida. Com a mesma
+                        criatividade e profundidade do primeiro filme, a animação mistura
+                        humor e lições valiosas, mantendo o público cativado. Visualmente impressionante, é uma
+                        continuação que enriquece a história original e ressoa com
+                        todas as idades.
+                    </p>
+                </div>
+                <div class="card__review-expand"> </div> <button class="card__button">Leia Mais</button>
+
+            </div>
+        </div>
+        </section>
+    </div>
+    <!-- FIM DO CONTEÚDO PRINCIPAL -->
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-links">
+            <p>©2025 Direitos Autorais Reservados</p>
+        </div>
+    </footer>
+
+
+    
+    <!-- FIM DO RODAPÉ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&mute=1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- Script para abrir o vídeo no modal -->
+
+    <!-- CAROOSEL SCRIPT-->
+    <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const carrosseis = document.querySelectorAll(".carrossel");
+
+    carrosseis.forEach(carrossel => {
+        let imagens = carrossel.querySelectorAll(".imagens img, .imagens iframe");
+        let indiceAtual = 0;
+
+        function mudarImagem(direcao) {
+            imagens[indiceAtual].classList.remove("ativo");
+
+            indiceAtual += direcao;
+            if (indiceAtual >= imagens.length) {
+                indiceAtual = 0;
+            } else if (indiceAtual < 0) {
+                indiceAtual = imagens.length - 1;
+            }
+
+            imagens[indiceAtual].classList.add("ativo");
+        }
+
+        // Define a função globalmente para evitar erro no `onclick`
+        carrossel.mudarImagem = mudarImagem;
+
+        // Botões do carrossel
+        const botaoEsquerda = carrossel.querySelector(".botao-esquerda");
+        const botaoDireita = carrossel.querySelector(".botao-direita");
+
+        if (botaoEsquerda) {
+            botaoEsquerda.addEventListener("click", () => mudarImagem(-1));
+        }
+
+        if (botaoDireita) {
+            botaoDireita.addEventListener("click", () => mudarImagem(1));
+        }
+
+        // Garante que apenas a primeira imagem fique visível inicialmente
+        imagens.forEach(img => img.classList.remove("ativo"));
+        imagens[indiceAtual].classList.add("ativo");
+    });
+});
+
+
+
+
+    </script>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+    const readMoreButtons = document.querySelectorAll('.card__button');
+
+    readMoreButtons.forEach(button => {
+        // Verifica se o botão está dentro de um .card ou um .review
+        const container = button.closest('.card') || button.closest('.review');
+        const reviewExpand = container.querySelector('.card__review-expand');
+        const review = container.querySelector('.card__review, .review-text');
+
+        // Esconde o texto no carregamento da página
+        if (reviewExpand) reviewExpand.style.display = 'none';
+        if (review) review.style.display = 'none';
+
+        // Garante que o botão sempre inicie com "Leia Mais"
+        button.textContent = 'Leia Mais';
+
+        // Adiciona evento de clique para alternar
+        button.addEventListener('click', () => {
+            if (reviewExpand && reviewExpand.style.display === 'none' || review && review.style.display === 'none') {
+                if (reviewExpand) reviewExpand.style.display = 'block';
+                if (review) review.style.display = 'block';
+                button.textContent = 'Leia Menos';
+            } else {
+                if (reviewExpand) reviewExpand.style.display = 'none';
+                if (review) review.style.display = 'none';
+                button.textContent = 'Leia Mais';
+            }
+        });
+    });
+});
+
+
+    </script>
+
+</body>
+
+</html>
