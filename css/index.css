@@ -1,0 +1,298 @@
+/* Reset de Estilos */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Definição de Fontes */
+@font-face {
+    font-family: texto_all;
+    src: url(../Fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: titulo_night;
+    src: url(../Fonts/January\ Night.ttf);
+}
+
+/* Estilos da barra de navegação */
+.navbar .nav-item {
+    padding: 5px 5px; 
+}
+
+.navbar .nav-link {
+    font-size: 20px; 
+    margin-left: 10px; 
+}
+
+
+/* Estilos do body */
+.myBackground {
+    background: url('../Imagens/cinema-back.webp') no-repeat center center/cover;
+    width: 100%;
+    height: 635px; /* Ajusta a altura da seção para não colidir com a navbar */
+    position: relative;
+    color: white;
+   
+}
+
+.myBackground-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(16, 16, 16, 0.7); /* Overlay escuro para melhor legibilidade */
+}
+
+/* Estilos da seção */
+section {
+    position: relative; /* Para que o overlay funcione corretamente */
+    display: flex; /* Para alinhar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    flex-direction: column;
+}
+/* Estilos do conteúdo dentro da seção */
+.section-content {
+    z-index: 1; /* Garante que o conteúdo fique acima do overlay */
+}
+
+.img-principal {
+    margin-top:15% ;
+    width: 350px;
+    height: 555px;
+
+}
+
+.titulo_night {
+    border-radius: 3px;
+    box-shadow: 3px 3px 0px 0px #080705;
+    border: solid 1px #03303d;
+    display: flex;
+    font-family: titulo_night, Arial, Helvetica;
+    color: #ffffff;
+    font-size: 33px;
+    max-width: 100%;
+    margin: 12px 0px;
+    padding: 0 6px;
+    background-color: #007494;
+    letter-spacing: 0.1em;
+    justify-content: space-evenly;
+    width: 800px;
+}
+
+/* Estilos do .card */
+.card {
+    margin: auto;
+    display: inline-block;
+}
+
+/* Estilos da tabela  */
+#customers {
+    font-family: texto_all;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+}
+
+#customers td,
+#customers th {
+    border: 2px solid #000000;
+    padding: 6px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #ecedee;
+}
+
+#customers tr:nth-child(even):hover {
+    background-color: #D6EEEE;
+}
+
+#customers a,
+tr {
+    color: rgb(0, 0, 0);
+}
+
+tr:hover {
+    background-color: #D6EEEE;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #478a9d;
+    color: white;
+}
+
+/* Estilos da lista ul.lista */
+ul.lista {
+    list-style-type: square;
+    text-align: justify;
+    padding: 25px;
+    width: 100%;
+    max-width: 800px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+ul.lista li {
+    margin-bottom: 15px;
+}
+
+ul.lista p {
+    margin: 5px 0;
+}
+
+/* Estilos para os ícones */
+.icons {
+    height: auto;
+    width: 50px;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important; 
+        flex-basis: auto; 
+        align-items: center; 
+        justify-content: space-between; 
+        flex-direction: column-reverse; 
+        margin-left: 160px; 
+    }
+
+    .navbar-nav {
+        margin-right: auto; 
+    }
+    
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 890px) {
+    .container {
+        width: 95%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 0 10px;
+    }
+
+    .titulo_night {
+        border-radius: 3px;
+        border: solid 1px #03303d;
+        display: flex;
+        width: 74%;
+        font-family: titulo_night, Arial, Helvetica;
+        color: #ffffff;
+        font-size: 33px;
+        max-width: 100%;
+        margin: 12px 0px;
+        padding: 0 6px;
+        background-color: #007494;
+        letter-spacing: 0.1em;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 790px) {
+    .container {
+        margin-top: 8px;
+    }
+
+    .navbar-links {
+        display: flex;
+        margin-left: auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .titulo_night {
+        border-radius: 3px;
+        border: solid 3px #03303d;
+        display: flex;
+        width: 100%;
+        font-family: titulo_night, Arial, Helvetica;
+        color: #ffffff;
+        font-size: 20px;
+        max-width: 100%;
+        margin: 12px 0px;
+        padding: 0 6px;
+        background-color: #007494;
+        letter-spacing: 0.1em;
+        justify-content: space-evenly;
+    }
+
+    ul.lista {
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .icons {
+        height: auto;
+        width: 50px;
+    }
+}
+
+
+/* Responsividade para telas maiores que 937px */
+@media (max-width: 967px) {
+    .container {
+        width: 95%; /* Ajuste de largura da container */
+        margin: auto;
+        display: flex;
+    }
+
+    /* Imagem principal no topo da página - tornar responsiva */
+    .img-principal {
+        width: 200px;
+        height: 250px;
+
+    }
+
+    /* Ajustar a tabela para telas menores */
+    .table-responsive {
+        margin-top: 20px;
+    }
+
+    /* Estilos de texto dentro da tabela */
+    .table th, .table td {
+        font-size: 14px;
+    }
+
+    .table a {
+        font-size: 12px;
+    }
+}
+
+/* Responsividade para telas menores que 790px */
+@media (max-width: 790px) {
+    .navbar .navbar-collapse {
+        flex-direction: column; /* Muda a direção da navbar */
+        align-items: center; /* Centraliza os itens da navbar */
+    }
+
+    .navbar-nav {
+        width: 100%; /* Ajuste de largura para os itens */
+        text-align: center;
+    }
+
+    /* Título maior em telas menores */
+    .titulo_night {
+        font-size: 22px;
+    }
+
+    /* Ajuste do espaço da tabela */
+    .table {
+        font-size: 12px; /* Menor tamanho de fonte na tabela */
+    }
+
+    .table-responsive {
+        overflow-x: scroll; /* Faz a tabela ser rolável em telas pequenas */
+    }
+}

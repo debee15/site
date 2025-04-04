@@ -1,0 +1,320 @@
+@font-face {
+    font-family: texto_all;
+    src: url(../Fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: titulo_all;
+    src: url(../Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos para o container do menu */
+.menu-container {
+    display: flex; 
+    align-items: center; 
+}
+
+/* Estilos para a seção de revisão */
+.review {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin-bottom: 20px; 
+    padding: 10px; 
+    border: .35rem solid; 
+    border-radius: 10px; 
+    box-shadow: 10px 8px 2px 2px #3898b3; 
+    background-color: #fff; 
+    transition: transform .3s ease; 
+}
+    
+.review:hover {
+    transform: translateY(-5px); 
+}
+
+.review-content {
+    flex: 1; 
+}
+
+.review-title {
+    font-family: titulo_all, Arial; 
+    text-align: left; 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    margin-bottom: 10px; 
+}
+
+.review-genres {
+    text-align: left; 
+    font-style: italic; 
+    margin-bottom: 15px; 
+}
+
+.review-synopsis,
+.review-text {
+    font-family: texto_all, arial; 
+    text-align: justify; 
+    line-height: 1.5rem; 
+    margin-bottom: 15px; 
+}
+
+.review-expand {
+    display: none; 
+}
+
+/* Estilos da barra de navegação */
+.navbar .nav-item {
+    padding: 5px 5px; 
+}
+
+.navbar .nav-link {
+    font-size: 20px; 
+    margin-left: 10px; 
+}
+
+/* Estilo do botão */
+.btn-class {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    background: #0bb3f5; /* Azul mais moderno */
+    color: white;
+    font-family: texto_all;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Efeito de hover no botão */
+.btn-class:hover {
+    background: #0ad6dd; /* Azul mais escuro no hover */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* ESTILIZAÇÃO DO BOTÃO DROPDOWN */
+.dropdown {
+    position: relative; 
+    display: inline-block; 
+    margin-left: 5%; 
+}
+
+/* Ícone da seta */
+.btn-class::after {
+    content: " ▼";
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+/* Gira a seta para cima quando o menu está visível */
+.dropdown:hover .btn-class::after {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    display: none; 
+    border-radius: 10px; 
+    position: absolute; 
+    background-color: #f9f9f9; 
+    min-width: 150px; 
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2); 
+    z-index: 1; 
+}
+
+.dropdown-content a {
+    color: #000; 
+    font-size: 15px; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+}
+
+.dropdown-content a:hover {
+    background-color: #e2dfdf; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important; 
+        flex-basis: auto; 
+        align-items: center; 
+        justify-content: space-between; 
+        flex-direction: column-reverse; 
+        margin-left: 160px; 
+    }
+
+    .navbar-nav {
+        margin-right: auto; 
+    }
+    
+}
+
+/* Linha de baixo da navbar*/
+.navbar {
+    padding: 10px 20px; 
+    background-color: #fff; 
+    border-bottom: .3rem solid #007494; 
+    box-shadow: 0 0 15px 1px rgba(60, 60, 60, .41); 
+}
+
+.navBar {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.navBar input[type=text] {
+    width: 100%; 
+    max-width: 510px; 
+    padding: 10px; 
+    font-size: 1rem; 
+    border: 1px solid #ddd; 
+    border-radius: 15px; 
+    transition: border-color .3s, box-shadow .3s; 
+}
+
+.navBar input[type=text]:focus,
+.navBar input[type=text]:hover {
+    border-color: #00c4ff; 
+    box-shadow: 0 0 8px #71d5ff; 
+    outline: 0; 
+}
+
+
+/* BOTÃO DE leia */
+.card__button {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color .3s ease; 
+}
+
+.card__button:hover {
+    background-color: #0056b3; 
+}
+
+/* Estilos para o carrossel */
+.carrossel {
+    position: relative; 
+    width: 30%; 
+    height: auto; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.imagens {
+    display: flex; 
+    width: 430px; 
+    height: 300px; 
+    position: relative; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.imagens iframe,
+.imagens img {
+    max-width: 90%; 
+    max-height: 90%; 
+    object-fit: contain; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    opacity: 0; 
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
+}
+
+.imagens .ativo {
+    opacity: 1; 
+}
+
+.imagens .ativo img {
+    width: 80%; 
+    height: 80%; 
+    object-fit: contain; 
+}
+
+/* Estilos para os botões do carrossel */
+.botao {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background-color: rgba(255, 255, 255, .8); 
+    border: none; 
+    cursor: pointer; 
+    padding: 10px; 
+    font-size: 18px; 
+    z-index: 10; 
+}
+
+.botao-esquerda {
+    left: 20px; 
+}
+
+.botao-direita {
+    right: 20px; 
+}
+
+@media (max-width: 768px) {
+    /* Garante que o layout da review fique empilhado */
+    .review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Mantém o carrossel dentro da review e coloca ele no topo */
+    .carrossel {
+        width: 100%;
+        max-width: 100%;
+       
+        margin-bottom: 15px;
+        position: relative; /* Garante que os botões fiquem alinhados */
+    }
+
+    /* Mantém as imagens e iframes dentro do carrossel */
+    .imagens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .imagens img,
+.imagens iframe {
+    opacity: 0; /* Mantém as imagens ocultas por padrão */
+    position: absolute; /* Mantém a posição do carrossel */
+}
+
+.imagens .ativo {
+    opacity: 1; /* Apenas a imagem ativa fica visível */
+    position: relative; /* Evita sobreposição */
+    margin: 12px;
+    width: 400px;
+}
+    /* Mantém o conteúdo do review abaixo do carrossel */
+    .review-content {
+        width: 100%;
+        padding: 10px;
+        text-align: justify;
+    }
+}
+
